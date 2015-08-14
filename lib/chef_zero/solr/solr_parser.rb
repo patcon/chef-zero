@@ -72,7 +72,7 @@ module ChefZero
           return @query_string[@index]
         else
           result = @query_string[@index..@index+1]
-          if ['&&', '||'].include?(result)
+          if ['&&', '||', '::'].include?(result)
             return result
           end
         end
